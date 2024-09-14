@@ -11,15 +11,13 @@ import { z } from "zod";
 export const GPT35_TURBO = new ChatOpenAI({
   model: "gpt-3.5-turbo",
   temperature: 0,
-  apiKey:
-    "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",
+  apiKey: process.env.OPENAI_APIKEY,
 });
 
 export const GPT4 = new ChatOpenAI({
   model: "gpt-4",
   temperature: 0,
-  apiKey:
-    "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",
+  apiKey: process.env.OPENAI_APIKEY,
 });
 
 const customTool = new DynamicTool({

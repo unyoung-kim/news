@@ -1,6 +1,6 @@
 import _ from "lodash";
-import { filtered } from "./sample";
-import { aggregateAndSelectTopKNews } from "./scraper";
+import { filtered } from "../src/sample";
+import { aggregateAndSelectTopKNews } from "../src/scraper";
 
 console.log("LEGNTH: ", _.flatten(filtered).length);
 

@@ -1,7 +1,7 @@
 import _ from "lodash";
-import { NewsInformation, aiScrape, filterNews } from "../../scraper";
 import { getRelevantUrlsToScrape } from "../../url-retriever";
-import { processListInChunks } from "../lib/batch/batching";
+import { processListInChunks } from "./lib/batch/batching";
+import { NewsInformation, aiScrape, filterNews } from "./scraper";
 
 /**
  * End to end function

@@ -8,7 +8,7 @@ import { RetrieveOutput } from "multion/api";
 import { GPT4 } from "./url-retriever";
 
 const multion = new MultiOnClient({
-  apiKey: "9eb7469897ae4c59bbc3a5b5545cad8a",
+  apiKey: process.env.MULTION_API_KEY ?? "",
 });
 
 // Given a list of urls, scrape and get an array of news sources
